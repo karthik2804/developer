@@ -1,16 +1,16 @@
 <script>
-import TopBar from './components/TopBar.vue'
+import HubIntro from './components/HubIntro.vue'
 import ContentSpace from './components/ContentSpace.vue'
 import PreviewModal from './components/PreviewModal.vue'
 
 export default {
-  components: {TopBar, ContentSpace, PreviewModal},
+  components: {HubIntro, ContentSpace, PreviewModal},
 }
 </script>
 
 <template>
-  <div class="main" >
-    <TopBar/>
+  <div class="main hub" >
+    <HubIntro/>
     <ContentSpace />
     <PreviewModal />
   </div>
@@ -18,7 +18,7 @@ export default {
 
 <style lang="scss">
 
-body{
+body {
   width: 100%;
   
   &.modal-open {

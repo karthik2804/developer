@@ -23,7 +23,6 @@ export default {
 @media screen and (max-width:1023px) {
     .content-wrapper {
         flex-direction: column;
-
     }
 }
 </style>

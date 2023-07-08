@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="topbar">
+  <div class="hub-intro">
     <div class="search-box">
       <div class="description">WELCOME TO THE SPIN UP HUB</div>
       <input class="search-input" type="text" placeholder="Explore the fermyverse">
@@ -14,7 +14,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.topbar {
+.hub-intro {
   padding: 8rem 1rem 1rem 1rem;
   display: flex;
   justify-content: center;
@@ -51,7 +51,7 @@ export default {
 }
 
 @media screen and (max-width:1023px) {
-  .topbar {
+  .hub-intro {
     .search-box {
       width: 90%;
     }
