@@ -34,18 +34,20 @@ export default {
 </script>
 
 <template>
-        <transition-group name="card-list" tag="div" class="content-listing" appear>
-            <Card v-for="item in contentItmes" :item="item" v-bind:key="item.title"></Card>
-        </transition-group>
+    <transition-group class="content-listing column is-four-fifths-desktop is-full-touch" name="card-list" tag="div"  appear>
+        <Card v-for="item in contentItmes" :item="item" v-bind:key="item.title"></Card>
+    </transition-group>
 </template>
+
 <style lang="scss" scoped>
 .content-listing {
     flex-grow: 1;
     min-height: 80%;
     display: flex;
-    justify-content: center;
+    padding-top: 3rem;
+    // justify-content: center;
     flex-wrap: wrap;
-    padding: 1rem;
+    // padding: 1rem;
 }
 .card-list-enter-active, .card-list-leave-active {
   transition: all 0.5s;

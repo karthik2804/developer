@@ -6,30 +6,40 @@ export default {
 
 <template>
   <div class="hub-intro">
-    <div class="search-box">
-      <div class="description">WELCOME TO THE SPIN UP HUB</div>
-      <input class="search-input" type="text" placeholder="Explore the fermyverse">
+    <div class="columns is-centered">
+      <div class="column is-three-fifths-desktop is-full-mobile">
+
+        <div class="search-box">
+          <div class="description">WELCOME TO THE SPIN UP HUB</div>
+            <input class="search-input" type="text" placeholder="Explore the fermyverse">
+          </div>
+        </div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .hub-intro {
-  padding: 8rem 1rem 1rem 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // padding: 8rem 1rem 1rem 1rem;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  min-height: 22rem;
+  padding-top: 10.5rem;
+  padding-bottom: 4.5rem;
 
   .search-box {
-    width: 60%;
-    max-width: 800px;
+    // width: 60%;
+    // max-width: 800px;
+    padding: 2.5rem 3.33rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     border-radius: 0.67rem;
     justify-content: center;
     background: $darkspace;
-    padding: 1rem;
+    // padding: 1rem;
 
     .description {
       margin-top: 1rem;

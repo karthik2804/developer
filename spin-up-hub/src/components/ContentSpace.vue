@@ -8,10 +8,13 @@ export default {
 
 <template>
     <div class="content-wrapper">
-        <ContentFilter />
-        <ContentListing />
+        <div class="columns is-0 is-mobile is-multiline">
+            <ContentFilter />
+            <ContentListing />
+        </div>
     </div>
 </template>
+
 <style lang="scss" scoped>
 .content-wrapper {
     width: 100%;
@@ -21,8 +24,8 @@ export default {
 }
 
 @media screen and (max-width:1023px) {
-    .content-wrapper {
-        flex-direction: column;
-    }
+    // .content-wrapper {
+    //     flex-direction: column;
+    // }
 }
 </style>

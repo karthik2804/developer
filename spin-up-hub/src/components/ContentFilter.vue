@@ -38,34 +38,38 @@ export default {
 </script>
 
 <template>
-  <div class="content-filters">
-    <div class="filter-category"> Content Types:</div>
-    <span v-for="item in contentTypes" class="tag" v-bind:class="isActiveContentType(item)" @click="toggleContentFilter(item)">{{ item }}</span>
-    <div class="filter-category"> Languages:</div>
-    <span v-for="item in languages" class="tag" v-bind:class="isActiveLanguage(item)" @click="toggleLanguageFilter(item)">{{ item }}</span>
-  </div>
+    <div class="content-filters column is-one-fifth-desktop is-full-touch">
+        <div class="filter-category"> Content Types:</div>
+        <span v-for="item in contentTypes" class="tag" v-bind:class="isActiveContentType(item)" @click="toggleContentFilter(item)">{{ item }}</span>
+        <div class="filter-category"> Languages:</div>
+        <span v-for="item in languages" class="tag" v-bind:class="isActiveLanguage(item)" @click="toggleLanguageFilter(item)">{{ item }}</span>
+    </div>
 </template>
+
 <style lang="scss" scoped>
 .content-filters {
-  width: 20%;
-  min-width: 20%;
-  padding-left: 3rem;
+//   width: 20%;
+//   min-width: 20%;
+//   padding-left: 3rem;
 
   .filter-category{
     margin-top: 2rem;
+    padding: 0.5rem 5% 0.5rem 0;
     font-size: 0.9rem;
     color: $lightplum;
     width: 100%;
     text-align: center;
     display: flex;
+    
   }
   .tag {
     display: inline-block;
     font-size: 0.9rem;
     margin: 0.2rem;
-    border-radius: 0.67rem;
-    padding: 0.2rem 0.4rem;
-    background-color: $lightplum;
+    border-radius: 2rem;
+    padding: 0.25rem 0.75rem;
+    background-color: darken($lightplum, 50.33%);
+    color: white;s
     &.active {
       background-color: $seagreen;
     }
@@ -73,17 +77,17 @@ export default {
 }
 
 @media screen and (max-width:1023px) {
-        .content-filters {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+        // .content-filters {
+        //     width: 100%;
+        //     display: flex;
+        //     flex-wrap: wrap;
+        //     justify-content: center;
 
-            .filter-category {
-              width: 100%;
-              display: flex;
-              justify-content: center;
-            }
-        }
+        //     .filter-category {
+        //       width: 100%;
+        //       display: flex;
+        //       justify-content: center;
+        //     }
+        // }
 }
 </style>
