@@ -6,7 +6,7 @@ export default {
 
 <template>
   <div class="hub-intro">
-    <div class="columns is-centered">
+    <div class="columns content-inner is-centered">
       <div class="column is-three-fifths-desktop is-full-mobile">
 
         <div class="search-box">
@@ -26,7 +26,7 @@ export default {
   // align-items: center;
   min-height: 22rem;
   padding-top: 10.5rem;
-  padding-bottom: 4.5rem;
+  padding-bottom: 4.25rem;
 
   .search-box {
     // width: 60%;
@@ -36,10 +36,11 @@ export default {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border-radius: 0.67rem;
+    border-radius: 1.2rem;
+    border: 1px solid rgba($lavender, 0.2);
     justify-content: center;
-    background: $darkspace;
-    // padding: 1rem;
+    background: desaturate(darken(rgba($lavender, 0.33), 42.5%), 25%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
     .description {
       margin-top: 1rem;

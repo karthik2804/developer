@@ -35,14 +35,16 @@ export default {
 
 <template>
     <transition-group class="content-listing column is-four-fifths-desktop is-full-touch" name="card-list" tag="div"  appear>
-        <Card v-for="item in contentItmes" :item="item" v-bind:key="item.title"></Card>
+        <div class="columns is-multiline">
+            <Card v-for="item in contentItmes" :item="item" v-bind:key="item.title"></Card>
+        </div>
     </transition-group>
 </template>
 
 <style lang="scss" scoped>
 .content-listing {
     flex-grow: 1;
-    min-height: 80%;
+    min-height: 46rem;
     display: flex;
     padding-top: 3rem;
     // justify-content: center;

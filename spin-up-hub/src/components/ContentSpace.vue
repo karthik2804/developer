@@ -8,7 +8,7 @@ export default {
 
 <template>
     <div class="content-wrapper">
-        <div class="columns is-0 is-mobile is-multiline">
+        <div class="columns content-inner is-0 is-mobile is-multiline">
             <ContentFilter />
             <ContentListing />
         </div>
@@ -20,7 +20,11 @@ export default {
     width: 100%;
     display: flex;
     margin-top: 2rem;
-    background-color: $darkspace;
+    border-top: 1px solid rgba($lavender, 0.333);
+    background: linear-gradient(180deg,
+        rgba(230, 210, 241, 0.05) 0%,
+        rgba(230, 210, 241, 0.00) 100%
+    );
 }
 
 @media screen and (max-width:1023px) {

@@ -32,7 +32,7 @@ body {
     min-height: 100vh;
 }
 
-.columns {
+.columns.content-inner {
     max-width: 88rem;
     margin-left: auto;
     margin-right: auto;

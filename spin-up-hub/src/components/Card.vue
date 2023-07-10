@@ -15,39 +15,38 @@ export default {
 </script>
 
 <template>
-    <div class="content-card" @click="OpenItem">
-        <div class="topbar">
-            <span class="category">{{ item.category }}</span>
-            <span class="icon"></span>
-        </div>
-        <div class="content-title">
-            {{ item.title }}
-        </div>
-        <div class="tags">
-            <span v-for="tag in item.tags">
-                {{ tag }}
-            </span>
-        </div>
+    <div class="column is-one-third" @click="OpenItem">
+        <a class="card">
+            <header>
+                <span class="category">{{ item.category }}</span>
+                <span class="icon"></span>
+            </header>
+            <article>
+                {{ item.title }}
 
+                <div class="tags">
+                    <span v-for="tag in item.tags">
+                        {{ tag }}
+                    </span>
+                </div>
+            </article>
+        </a>
     </div>
 </template>
 
 <style lang="scss" scoped>
-.content-card {
+.card {
     margin-bottom: 1rem;
-    height: 200px;
-    min-width: 250px;
-    max-width: 250px;
+    min-height: 200px;
     display: flex;
     flex-direction: column;
-    background-color: $oxfordblue;
-    padding: 1rem;
-    border-radius: 0.67rem;
+    background: desaturate(darken(rgba($lavender, 0.33), 42.5%), 25%);
+    // padding: 1rem;
+    border-radius: 1rem;
     transition: all 1s ease-in-out;
     overflow: hidden;
-    margin-right: 0.5rem;
 
-    .topbar {
+    header {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -71,7 +70,7 @@ export default {
         }
     }
 
-    .content-title {
+    article {
         margin-top: 1rem;
         flex-grow: 1;
         font-size: 1.125rem;
